@@ -6,7 +6,7 @@ def rock():
         print("It's a draw")
     elif userChoice == "Scissors":
         print("You lost")
-    elif userChoice == "Paper":
+    elif userChoice == "Papier":
         print("You win")
 
 def scissors():
