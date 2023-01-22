@@ -10,22 +10,22 @@ root.geometry("640x650")
 #Titre du programme 
 root.title("List de tâches")
 
-#Endroit oû l'utilisateur peut entrer le titre de la tâche et une date
+#Endroit oû l'utilisateur peut entrer le titre de la tâche et une date. 'Entry()' est comme la version Tkinter de 'input()'
 enter = Entry(root)
 time = Entry(root)
 
-#Ajout de texte 
+#Ajout de texte grâce a 'Label()'. 
 myLabelenter = Label(root, text = "Entrer un tâche: ")
 myLabeltime = Label(root, text= "Entrer une date: ")
 
-#Place le texte
+#Place le texte. '.grid()' transforme l'écran en carré. Dans l'informatique, le numéro 0 est considéré comme 1. 'row' veut dire rangée et 'column' veut dire colonne. 
 myLabelenter.grid(row=0, column= 0)
 enter.grid(row= 0, column= 1)
 myLabeltime.grid(row= 1, column= 0)
 time.grid(row= 1, column= 1)
 
-#Endroit oû la liste sera formée
-list = Listbox(root, height= 30, width= 40)
+#Endroit oû la liste sera formée. 'Listbox()' permet de créer une section ou des textes seront placés verticalement. 
+list = Listbox(root, height= 30, width= 40) #Avec 'height=' et 'width=', j'ai pu choisir la longueur et la largeur de la liste. 
 list.grid(row = 2, column= 1) 
 
 
