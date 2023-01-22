@@ -31,8 +31,8 @@ list.grid(row = 2, column= 1)
 
 #Le button qui permet d'ajouter une tâche dans la liste 
 def addtask():
-    list.insert(END, enter.get() + " " + "|" + " " + time.get())
-    enter.delete(0, END)
+    list.insert(END, enter.get() + " " + "|" + " " + time.get()) #En cliquant ce boutton, l'application enregistre la tache et le temps avec '.get()' puis l'insère dans la list avec '.insert()'
+    enter.delete(0, END) #Une fois placer dans la liste, le texte est enlever de l'endroit pour l'ajouter. 
     time.delete(0, END)
 
 #Boutton qui ferme l'application 
