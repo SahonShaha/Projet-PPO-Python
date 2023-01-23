@@ -1,3 +1,4 @@
+#Importe le module 'Tkinter' avec l'extension 'messagebox' et le module 'time' pour le temps. 
 from tkinter import *
 from tkinter import messagebox
 import time 
